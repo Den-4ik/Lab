@@ -14,7 +14,7 @@ products = [
 @app.route('/products', methods=['GET'])
 def get_products():
     """Получить список всех товаров"""
-    return jsonify(products)/
+    return products
 
 @app.route('/products/<int:product_id>', methods=['GET'])
 def get_product(product_id):
